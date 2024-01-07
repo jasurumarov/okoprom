@@ -367,11 +367,17 @@ padding-bottom: 20px;
 
 }
 .pas button {
+    border: 1px solid #000;
     border-radius: 8px;
     background: var(--Background-Black, #202226); 
     color: white;  
     cursor: pointer;
-    border: none;
+    transition: .3s linear all;
+}
+.pas button:hover{
+    border: 1px solid black ;;
+    color: black;
+    background:transparent ;
 }
 .pas button p{
     display: flex;
@@ -409,7 +415,8 @@ line-height: 28px; /* 116.667% */
 letter-spacing: 0.24px;
 padding-bottom: 20px;
 }
-.card2{
+.card2{    position: relative;
+    z-index: -1;
     width: 289px;
 height: 512px;
 flex-shrink: 0;
