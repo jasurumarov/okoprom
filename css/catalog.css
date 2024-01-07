@@ -16,6 +16,260 @@
   margin: 0 auto;
 }
 
+/* HEADER ///////////////////////////////////////////////////////////////// */
+
+header {
+  position: relative;
+}
+
+.navTop-delivery-list-change {
+  display: none;  
+}
+
+.header-nav-top {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 12px 0;
+  background: #F4F5F8;
+  z-index: 100;
+}
+
+.header-navTop-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.header-nav-top-right {
+  display: flex;
+  gap: 80px;
+}
+
+.navTop-contacts-list {
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navTop-delivery-list {
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navTop-listItem-link {
+  color: #757575;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+}
+.navTop-listItem-link:hover {
+  color: #161616;
+  transition: .5s;
+}
+
+.header-nav-bottom {
+  padding-top: 84px;
+  transition: .2s;
+}
+
+.header-navBottom-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navBottom-list {
+  display: flex;
+  list-style-type: none;
+  gap: 8px;        
+}
+
+.navBottom-listItem-link {
+  padding: 12px 20px;
+  background:#F4F5F8; 
+  border-radius: 5px; 
+  color: #161616;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; 
+  text-decoration: none;
+  border: 1px solid #F4F5F8;
+}
+.navBottom-listItem-link:hover {
+  border: 1px solid #161616;
+  color: black;
+  transition: .3s;
+}
+
+.header-nav-bottom-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-bottom-icon {
+  padding: 10px 10px 6px 10px;
+  border-radius: 8px;
+  background: #F4F5F8;
+  cursor: pointer;
+}
+
+.header-navBottom-link {
+  padding: 11px 19px;
+  border-radius: 8px;
+  background: #202226;
+  text-decoration: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; 
+}
+.header-navBottom-link:hover {
+  color: #202226;
+  background: #FFF;
+  border: 1px solid #202226;
+  transition: .3s;
+}
+
+.menu-btn {
+  padding: 10px 10px 6px 10px;
+  border-radius: 8px;
+  background: #F4F5F8;
+  cursor: pointer;
+  display: none;
+}
+
+/* HEADER MEDIA QUERIES //////////////////////////////////////////// */
+
+@media (max-width: 1024px) {
+
+  .header-nav-bottom {
+      padding-top: 96px;
+  }
+
+  .header-navBottom-content{
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+  }
+
+  .header-nav-top-right {
+      gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navTop-contacts-list {
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  .navTop-delivery-list {
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  .header-nav-top-right {
+      gap: 70px;
+  }
+
+  .header-nav-bottom {
+      padding-top: 116px;
+  }
+
+}
+
+@media (max-width: 624px) {
+
+  .menu-btn {
+      display: block;
+  }
+
+  .navBottom-list {
+      display: none;
+  }
+
+  .oddelno-btn {
+      display: none;
+  }
+
+  .navTop-delivery-list {
+      display: none;
+  }
+
+  .header-navBottom-content {
+      display: flex;  
+      flex-direction: row; 
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  .menu-opened .navBottom-list {
+      width: 100%;
+      display: block;
+      display: flex;
+      align-items: center;    
+      flex-direction: column;
+      gap: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;    
+      z-index: 10;
+      bottom: -280px;  
+  }
+
+  .menu-opened .navTop-delivery-list-change {
+      width: 100%;
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -400px;
+      list-style-type: none;
+  }
+
+  .menu-opened .navTop-listItem-link-respon {
+      padding: 12px 20px;
+      background:#F4F5F8; 
+      border-radius: 5px; 
+      color: #161616;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px; 
+      text-decoration: none;
+      border: 1px solid #F4F5F8;
+  }
+  .menu-opened .navTop-listItem-link-respon:hover {
+      border: 1px solid #161616;
+      color: black;
+      transition: .3s;
+  }
+
+  .menu-opened .oddelno-btn {
+      display: block;
+      position: absolute;
+      margin: 0 auto;
+  }
+
+
+  .menu-opened .header-nav-bottom {
+      margin-bottom: 470px;
+  }
+
+}
+
+/* END HEADER ///////////////////////////////////////////////// */
+
 .main-catalog {
   display: flex;
 }
