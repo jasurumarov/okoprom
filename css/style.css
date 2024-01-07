@@ -28,6 +28,7 @@ header {
 
 .header-nav-top {
   position: fixed;
+  z-index: 100;
   left: 0;
   right: 0;
   padding: 12px 0;
@@ -258,6 +259,14 @@ header {
         display: block;
         position: absolute;
         margin: 0 auto;
+    }
+
+    .menu-opened .header-bottom-icon {
+        display: none;
+    }
+
+    .menu-opened .header-navBottom-link {
+        font-size: 14px;
     }
 
 
