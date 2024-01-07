@@ -63,18 +63,20 @@
 
 .header-nav-bottom {
     padding-top: 84px;
+    transition: .2s;
 }
 
 .header-navBottom-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;  
 }
 
 .navBottom-list {
     display: flex;
     list-style-type: none;
-    gap: 8px;
+    gap: 8px;        
 }
 
 .navBottom-listItem-link {
@@ -125,6 +127,14 @@
     transition: .3s;
 }
 
+.menu-btn {
+    padding: 10px 10px 6px 10px;
+    border-radius: 8px;
+    background: #F4F5F8;
+    cursor: pointer;
+    display: none;
+}
+
 /* HEADER MEDIA QUERIES //////////////////////////////////////////// */
 
 @media (max-width: 1024px) {
@@ -165,3 +175,86 @@
     }
 
 }
+
+@media (max-width: 624px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navBottom-list {
+        display: none;
+    }
+
+    .oddelno-btn {
+        display: none;
+    }
+
+    .navTop-delivery-list {
+        display: none;
+    }
+
+    .header-navBottom-content {
+        display: flex;  
+        flex-direction: row; 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu-opened .navBottom-list {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;    
+        flex-direction: column;
+        gap: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;    
+        z-index: 10;
+        bottom: -280px;  
+    }
+
+    .menu-opened .navTop-delivery-list {
+        width: 100%;
+        display: block;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -485px;
+    }
+
+    .menu-opened .navTop-listItem-link-respon {
+        padding: 12px 20px;
+        background:#F4F5F8; 
+        border-radius: 5px; 
+        color: #161616;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px; 
+        text-decoration: none;
+        border: 1px solid #F4F5F8;
+    }
+    .menu-opened .navTop-listItem-link-respon:hover {
+        border: 1px solid #161616;
+        color: black;
+        transition: .3s;
+    }
+
+    .menu-opened .oddelno-btn {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+    }
+
+
+    .menu-opened .header-nav-bottom {
+        margin-bottom: 470px;
+    }
+
+}
+
+/* END HEADER ///////////////////////////////////////////////// */
