@@ -688,7 +688,7 @@ padding-bottom: 20px;
     cursor: pointer;
     transition: .3s linear all;
 }
-.pas button:hover{
+.card2 .pas button:hover{
     border: 1px solid black ;;
     color: black;
     background:transparent ;
