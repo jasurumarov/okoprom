@@ -87,7 +87,7 @@ line-height: 20px; /* 125% */
 }
 .main-page2{
     position: relative;
-    top: -3380px;
+    top: -3389px;
     left: 500px;
 
 }
@@ -321,7 +321,12 @@ line-height: 20px; /* 125% */
 }
 .text-2{
     margin-top: 60px;
-=======
+}
+.try{
+    position: relative;
+    left: 80px;
+}
+=======.
 /* HEADER ///////////////////////////////////////////////////////////////// */
 
 header {
@@ -583,7 +588,6 @@ header {
   
   /* END HEADER ///////////////////////////////////////////////// */
   
-
 
 
 
