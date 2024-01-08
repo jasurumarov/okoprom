@@ -643,8 +643,12 @@ flex-direction: row-reverse;
 }
 @media(max-width:768px){
     .vid{
+        width: 100%;
         display: flex;
         align-items: center;
+    }
+    .vid iframe{
+        width: 100%;
     }
     .cards {
         display: flex;
@@ -670,6 +674,17 @@ flex-direction: row-reverse;
         order: 1;
     }
 
+}
+@media(max-width:450px){
+    .vid{
+        width: 100%;
+    }
+    .vid iframe{
+        width: 100%;
+    }
+    .tovar h3 {
+        width: 100%;
+    }
 }
 @media(max-width:320px){
     .vid{
