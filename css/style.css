@@ -211,9 +211,9 @@ button {
     /* height: 180px; */
     flex-shrink: 0;
   }
-  .product_title {
+  /* .product_title { */
     /* width: 624px; */
-  }
+  /* } */
 }
 @media (max-width: 768px) {
   .container {
