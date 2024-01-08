@@ -297,11 +297,13 @@ letter-spacing: -0.6px;
 
 .malumot--1{
   display: flex;
+  flex-wrap: wrap;
 }
 
 .malumot--2{
   padding-top: 20px;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .text--1{
@@ -345,8 +347,33 @@ line-height: 20px; /* 125% */
   .section-kantrol{
     flex-wrap: wrap;
   }
+ 
 }
 
+@media (max-width:320px)
+{
+  .karta{
+    width: 288px;
+    height: 182px;
+  }
+
+  .ustun-1, .ustun-2{
+    width: 288px;
+  }
+
+  .adres-1, .vaqt-1, .email-1, .telefon-1, .messenjir-1, {
+    width: 288px; 
+    
+    
+  }
+  .malumot--1, .malumot--2{
+    width: 288px;
+  }
+
+  .text--1, .text--2, .adres--p{
+    font-size: 16px;
+  }
+}
 
 
 
