@@ -377,11 +377,11 @@ header {
   transition: all 0.5s;
   margin-left: 5px;
   display: none;
+  border: 1px solid #202226;
 }
 
 .aside-content2:hover {
   background: #fff;
-  border: 1px solid #202226;
   transition: 0.3s;
 }
 
@@ -449,6 +449,7 @@ header {
   font-weight: 400;
   line-height: 20px;
   margin: 5px;
+  border: 1px solid #f4f5f8;
 }
 
 .filter-link:hover {
@@ -494,8 +495,19 @@ header {
   padding: 20px 20px 52px 20px;
 }
 
+.product-card:first-child .product-text {
+  padding-bottom: 40px;
+}
+.product-card:nth-child(6) .product-text {
+  padding-bottom: 40px;
+}
+.product-card:nth-child(7) .product-text {
+  padding-bottom: 40px;
+}
+
 .product-text {
   width: 249px;
+  padding-bottom: 20px;
 color: var(--Text-Black, #161616);
 /* Desktop/Body/M Regular */
 font-family: Golos;
@@ -545,7 +557,7 @@ span {
 }
 
 .product-btn {
-  margin: 0px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;  
   display: flex;
   width: 249px;
   padding: 12px 20px;
@@ -560,11 +572,11 @@ span {
   background: #202226;
   border: none;
   cursor: pointer;
+  border: 1px solid #202226;
 }
 
 .product-btn:hover {
   background: #fff;
-  border: 1px solid #202226;
   transition: 0.3s;
   color: #202226;
 }
